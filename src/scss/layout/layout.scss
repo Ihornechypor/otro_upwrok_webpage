@@ -8,3 +8,11 @@ footer {
   margin: 0 auto;
   max-width: 1920px;
 }
+
+.container--inner {
+  @media only screen and (min-width: $large) {
+    max-width: 1280px;
+    width: 100%;
+    margin-inline: auto;
+  }
+}

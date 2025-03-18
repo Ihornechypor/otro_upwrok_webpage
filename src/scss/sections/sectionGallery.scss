@@ -1,0 +1,19 @@
+.sectionGallery {
+  background-color: var(--color_purple);
+
+  @media only screen and (min-width: $large) {
+    padding: 100px var(--gutter);
+  }
+
+  @media only screen and (max-width: $ldown) {
+    padding: 50px var(--gutter) 0;
+  }
+}
+
+.sectionGallery__text {
+  margin-top: 30px;
+}
+
+.sectionGallery__btn {
+  margin-top: 50px;
+}
