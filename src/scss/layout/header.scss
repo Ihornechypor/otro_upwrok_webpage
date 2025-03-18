@@ -1,0 +1,10 @@
+.header {
+  background-color: var(--color_purple);
+  padding-top: 50px;
+  padding-bottom: 53px;
+
+  @media only screen and (max-width: $ldown) {
+    padding-top: 30px;
+    padding-bottom: 30px;
+  }
+}

@@ -1,0 +1,14 @@
+<picture @@if(context.class) {class="@@class"} @@if(context.dataAttrs){@@dataAttrs}>
+    @@if(!context.respImage){
+        <source
+          srcset="@@src.webp"
+          type="image/webp"
+        >
+    }
+    <img
+      src="@@src.@@ext"
+      alt="@@alt"
+      class="@@if(context.classImg) {@@classImg}" 
+      @@if(context.picWidthHeight){@@picWidthHeight}
+    >
+</picture>

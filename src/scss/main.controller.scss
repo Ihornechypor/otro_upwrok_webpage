@@ -1,0 +1,18 @@
+// normalize
+@import "./_vendor/normalize";
+
+// Variables
+@import "variables/variables";
+
+// common
+@import "./common/typography";
+
+//componetns
+@import "./components/btn";
+//Layout
+@import "layout/footer";
+@import "layout/header";
+@import "layout/layout";
+
+// Sections
+@import "sections/sectionJumbo";

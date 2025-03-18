@@ -1,0 +1,30 @@
+* {
+  -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
+  -webkit-tap-highlight-color: transparent;
+}
+
+.fSec {
+  font-family: var(--fontSecondary);
+  font-family: var(--fontSecondary);
+}
+
+body {
+  text-rendering: optimizeLegibility;
+  -webkit-font-smoothing: antialiased;
+  font-family: var(--fontPr);
+  color: var(--color_black);
+  font-size: var(--fontSize);
+  line-height: 1.5;
+}
+
+.fontSc {
+  font-family: var(--fontSc);
+}
+
+.fW800 {
+  font-weight: 800;
+}
+
+.tCenter {
+  text-align: center;
+}

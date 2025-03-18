@@ -1,0 +1,31 @@
+<picture @@if(context.class) {class="@@class"} @@if(context.dataAttrs){@@dataAttrs}>
+
+  @@if(!context.respImage){
+    <source
+      srcset="@@src.webp"
+      type="image/webp"
+    >
+  }
+
+  @@if(context.respImage){
+    <source
+      srcset="@@src.webp"
+      type="image/webp"
+      media="(min-width: 1024px)"
+      @@if(context.picWidthHeight){@@picWidthHeight}
+    >
+    <source
+      srcset="@@src.webp"
+      type="image/webp"
+      media="(min-width: 1024px)"
+      @@if(context.picWidthHeightMob){@@picWidthHeightMob}
+    >
+  }
+  <img
+    src="@@src.@@ext"
+    alt="@@alt"
+    class="@@if(context.classImg) {@@classImg}"
+    loading="lazy"
+    @@if(context.picWidthHeight){@@picWidthHeight}
+  >
+</picture>
