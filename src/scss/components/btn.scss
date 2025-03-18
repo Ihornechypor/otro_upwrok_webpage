@@ -6,9 +6,16 @@
   font-weight: 800;
   text-decoration: none;
   display: inline-block;
+  transition: background-color 0.5s;
 }
 
 .btn--primary {
   background-color: var(--color_primary);
   color: #fff;
+
+  &:hover,
+  &:focus {
+    cursor: pointer;
+    background-color: var(--color_primary2);
+  }
 }
