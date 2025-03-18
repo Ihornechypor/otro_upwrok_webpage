@@ -5,6 +5,7 @@
 @import "variables/variables";
 
 // common
+@import "./common/helpers";
 @import "./common/typography";
 
 //componetns
@@ -15,6 +16,7 @@
 @import "layout/layout";
 
 // Sections
+@import "sections/sectionCommon";
 @import "sections/sectionJumbo";
 @import "sections/sectionGallery";
 @import "sections/sectionInfo";

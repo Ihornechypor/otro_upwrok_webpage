@@ -1,0 +1,24 @@
+.smDnone {
+  @media only screen and (max-width: $ldown) {
+    display: none;
+  }
+}
+
+.smShow {
+  @media only screen and (max-width: $ldown) {
+    display: block;
+  }
+}
+
+.lgDnone {
+  @media only screen and (min-width: $large) {
+    display: none;
+  }
+}
+
+.imgSmFluid {
+  @media only screen and (max-width: $ldown) {
+    display: block;
+    width: 100%;
+  }
+}

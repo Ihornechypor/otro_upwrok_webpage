@@ -31,20 +31,8 @@ footer {
   align-items: center;
 }
 
-.smDnone {
+.gridSmReverse {
   @media only screen and (max-width: $ldown) {
-    display: none;
-  }
-}
-
-.smShow {
-  @media only screen and (max-width: $ldown) {
-    display: block;
-  }
-}
-
-.lgDnone {
-  @media only screen and (min-width: $large) {
-    display: none;
+    grid-auto-flow: d;
   }
 }

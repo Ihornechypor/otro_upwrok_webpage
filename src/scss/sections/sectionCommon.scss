@@ -5,3 +5,21 @@
 .section__btn {
   margin-top: 50px;
 }
+
+.section__img {
+  @media only screen and (max-width: $ldown) {
+    margin-top: 50px;
+  }
+}
+
+.section__lgTtR {
+  @media only screen and (min-width: $large) {
+    padding-right: 66px;
+  }
+}
+
+.section__lgTtL {
+  @media only screen and (min-width: $large) {
+    padding-left: 66px;
+  }
+}
