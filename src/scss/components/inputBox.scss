@@ -1,0 +1,65 @@
+.sectionForm__box {
+  margin-top: 30px;
+}
+
+.inputBox--flag {
+}
+
+.inputBox__label {
+}
+
+.inputBox__trigger {
+  display: block;
+  border: 1px solid rgba(1, 0, 0, 0.3);
+  margin-top: 12px;
+  padding: 10px 20px;
+
+  &::placeholder {
+    color: rgba(1, 0, 0, 0.3);
+  }
+}
+
+.inputBox__inner--relative {
+  position: relative;
+}
+
+.inputBox__flag {
+  position: absolute;
+  top: 16px;
+  left: 16px;
+}
+
+.inputBox__trigger--wide {
+  width: 100%;
+}
+
+.inputBox__trigger--flag {
+  padding-left: 52px;
+}
+
+.inputBox__trigger--select {
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  background: url(../images/logos/ico_arrow.svg) calc(100% - 12px) center/ 22px
+    no-repeat;
+}
+
+.inputBox__trigger--noRes {
+  resize: none;
+}
+
+.inputBox--checkBox {
+  display: flex;
+  align-items: center;
+}
+
+.inputBox__checkTrigger {
+  width: 18px;
+  height: 18px;
+  flex-shrink: 0;
+  border: 1px solid #d9d9d9;
+}
+
+.inputBox__label--withCheckBox {
+  margin-left: 14px;
+}
