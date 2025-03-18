@@ -1,2 +1,12 @@
 .footer {
+  font-weight: 500;
+  background-color: var(--color_purple);
+  padding: 15px var(--gutter);
+
+  @media only screen and (max-width: $ldown) {
+    font-size: 12px;
+  }
+  @media only screen and (min-width: $large) {
+    font-size: 14px;
+  }
 }

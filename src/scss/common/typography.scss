@@ -31,9 +31,17 @@ body {
 
 h2 {
   font-weight: 800;
-  font-size: 50px;
+
   line-height: 1.2;
   @media only screen and (max-width: $ldown) {
     font-size: 36px;
+  }
+
+  @media only screen and (min-width: $large) {
+    font-size: 37px;
+  }
+
+  @media only screen and (min-width: $xlarge) {
+    font-size: 50px;
   }
 }
