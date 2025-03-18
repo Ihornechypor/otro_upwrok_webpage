@@ -1,10 +1,8 @@
 .sectionInfo {
   @media only screen and (max-width: $ldown) {
-    padding-top: 50px;
-    padding-bottom: 50px;
+    padding: 50px var(--gutter);
   }
   @media only screen and (min-width: $large) {
-    padding-top: 100px;
-    padding-bottom: 100px;
+    padding: 100px var(--gutter);
   }
 }
