@@ -7,6 +7,7 @@ main,
 footer {
   margin: 0 auto;
   max-width: 1920px;
+  overflow: hidden;
 }
 
 .container--inner {
@@ -14,5 +15,32 @@ footer {
     max-width: 1280px;
     width: 100%;
     margin-inline: auto;
+  }
+}
+
+.gridContainer {
+  display: grid;
+
+  @media only screen and (min-width: $large) {
+    grid-template-columns: 0.5fr 0.5fr;
+    grid-auto-flow: column;
+  }
+}
+
+.smDnone {
+  @media only screen and (max-width: $ldown) {
+    display: none;
+  }
+}
+
+.smShow {
+  @media only screen and (max-width: $ldown) {
+    display: block;
+  }
+}
+
+.lgDnone {
+  @media only screen and (min-width: $large) {
+    display: none;
   }
 }

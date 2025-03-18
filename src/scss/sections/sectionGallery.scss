@@ -1,12 +1,22 @@
 .sectionGallery {
   background-color: var(--color_purple);
+  position: relative;
 
   @media only screen and (min-width: $large) {
     padding: 100px var(--gutter);
   }
 
   @media only screen and (max-width: $ldown) {
-    padding: 50px var(--gutter) 0;
+    padding: 50px 0 0 var(--gutter);
+  }
+}
+
+.sectionGallery__textCol {
+  @media only screen and (max-width: $ldown) {
+    padding-right: var(--gutter);
+  }
+  @media only screen and (min-width: $large) {
+    padding-right: 66px;
   }
 }
 
@@ -16,4 +26,31 @@
 
 .sectionGallery__btn {
   margin-top: 50px;
+}
+
+.sectionGallery__galCol {
+  @media only screen and (max-width: $ldown) {
+    padding-top: 50px;
+    overflow-x: auto;
+    scroll-snap-type: x mandatory;
+
+    &::-webkit-scrollbar {
+      display: none;
+    }
+  }
+}
+
+.sectionGallery__galBox {
+  display: flex;
+  gap: var(--gap);
+
+  @media only screen and (max-width: $ldown) {
+    width: 200%;
+  }
+}
+
+.sectionGallery__img {
+  @media only screen and (max-width: $ldown) {
+    scroll-snap-align: center;
+  }
 }

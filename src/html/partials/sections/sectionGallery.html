@@ -1,6 +1,6 @@
 <section class="sectionGallery">
-    <div class="container--inner">
-        <div>
+    <div class="container--inner gridContainer sectionGallery__container">
+        <div class="sectionGallery__textCol">
             <h2 class="">
                 OTRO – Distribuie Eleganța Eco-Friendly
             </h2>
@@ -17,7 +17,33 @@
                 Deveniți distribuitor
             </a>
         </div>
-        <div>
+        <div class="sectionGallery__galCol">
+            <div class="sectionGallery__galBox">
+                @@include("components/picture-resp2_native_lazy.html", {
+                    "class": "sectionGallery__img", 
+                    "classImg": "img-fluid", 
+                    "src": "images/sections/gal_img_1",
+                    "ext": "jpg",   
+                    "alt": "",
+                    "picWidthHeight": 'width="305" height="536"',
+                  })
+                @@include("components/picture-resp2_native_lazy.html", {
+                    "class": "sectionGallery__img", 
+                    "classImg": "img-fluid", 
+                    "src": "images/sections/gal_img_2",
+                    "ext": "jpg",   
+                    "alt": "",
+                    "picWidthHeight": 'width="305" height="536"',
+                  })
+                @@include("components/picture-resp2_native_lazy.html", {
+                    "class": "lgDnone smShow sectionGallery__img", 
+                    "classImg": "img-fluid", 
+                    "src": "images/sections/gal_img_3",
+                    "ext": "jpg",   
+                    "alt": "",
+                    "picWidthHeight": 'width="305" height="536"',
+                  })
+            </div>
 
         </div>
     </div>
