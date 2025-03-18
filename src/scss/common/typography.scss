@@ -15,6 +15,10 @@ body {
   color: var(--color_black);
   font-size: var(--fontSize);
   line-height: 1.5;
+
+  @media only screen and (max-width: $ldown) {
+    font-size: var(--fontSizeSm);
+  }
 }
 
 .fontSc {
