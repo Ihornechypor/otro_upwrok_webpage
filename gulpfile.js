@@ -10,6 +10,7 @@ const {
   avifRelocate,
   webpRelocate
 } = require("./gulp-tasks/images");
+const { videoRelocate } = require("./gulp-tasks/video");
 const { faviconTask } = require("./gulp-tasks/copy");
 
 const localhost = () => {
@@ -34,6 +35,7 @@ const watchTasks = () => {
   watch(["src/html/**/*.html"], html);
   watch(["src/images/**/*.{png,jpg}"], respImages);
   watch(["src/images/**/*.svg"], svgRelocate);
+  watch(["src/video/**/*"], videoRelocate);
 };
 
 // gulp serve - run development with localhost server
@@ -46,7 +48,8 @@ exports.serve = series(
   svgRelocate,
   avifRelocate,
   webpRelocate,
-  watchTasks
+  watchTasks,
+  videoRelocate
 );
 
 // gulp build - run production build with critical css & image optymize
@@ -60,6 +63,7 @@ exports.build = series(
     respImages,
     svgRelocate,
     avifRelocate,
-    webpRelocate
+    webpRelocate,
+    videoRelocate
   )
 );

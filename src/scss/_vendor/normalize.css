@@ -12,7 +12,6 @@ body {
 }
 img,
 picture,
-video,
 canvas,
 svg {
   height: auto;
