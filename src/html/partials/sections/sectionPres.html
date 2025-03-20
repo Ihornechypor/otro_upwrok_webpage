@@ -17,20 +17,17 @@
             <div class="sectionPres__galBox">
                 @@include("components/picture-resp2_native_lazy.html", {
                     "class": "smDnone", 
-                    "classImg": "", 
+                    "classImg": "sectionPres__galImg", 
                     "src": "images/sections/pres_img_1",
                     "ext": "jpg",   
                     "alt": "",
                     "picWidthHeight": 'width="305" height="505"',
                   })
-                @@include("components/picture-resp2_native_lazy.html", {
-                    "class": "", 
-                    "classImg": "imgSmFluid", 
-                    "src": "images/sections/pres_img_2",
-                    "ext": "jpg",   
-                    "alt": "",
-                    "picWidthHeight": 'width="305" height="505"',
-                  })
+                  <div>
+                    <video autoplay loop muted playsinline class="sectionPres__video">
+                        <source src="video/video_press.mp4" type="video/mp4">
+                    </video>
+                  </div>
             </div>
 
         </div>

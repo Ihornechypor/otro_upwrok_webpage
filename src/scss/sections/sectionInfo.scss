@@ -1,8 +1,13 @@
-.sectionInfo__textCol {
-  @media only screen and (max-width: $ldown) {
-    order: -1;
+.sectionInfo {
+  .section__lgTtL {
+    @media only screen and (max-width: $ldown) {
+      order: -1;
+      margin-top: 0;
+      margin-bottom: 50px;
+    }
   }
-
+}
+.sectionInfo__textCol {
   @media only screen and (min-width: $large) {
     padding-left: 66px;
   }

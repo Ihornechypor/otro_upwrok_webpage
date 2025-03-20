@@ -22,6 +22,7 @@
     padding-top: 50px;
     overflow-x: auto;
     scroll-snap-type: x mandatory;
+    margin-left: -15px;
 
     &::-webkit-scrollbar {
       display: none;
@@ -34,12 +35,16 @@
   gap: var(--gap);
 
   @media only screen and (max-width: $ldown) {
-    width: 200%;
+    width: 990px;
   }
 }
 
 .sectionGallery__img {
   @media only screen and (max-width: $ldown) {
     scroll-snap-align: center;
+
+    img {
+      display: block;
+    }
   }
 }
