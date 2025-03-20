@@ -1,17 +1,8 @@
 .sectionPres {
   background-color: var(--color_purple);
-
-  @media only screen and (max-width: $ldown) {
-    padding-bottom: 0px;
-    margin-bottom: -1px;
-  }
 }
 
 .sectionPres__galBox {
-  @media only screen and (max-width: $ldown) {
-    margin-left: -17px;
-    margin-right: -17px;
-  }
   @media only screen and (min-width: $large) {
     display: flex;
     gap: var(--gap);

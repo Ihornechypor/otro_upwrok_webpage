@@ -23,3 +23,29 @@
 @import "sections/sectionInfo";
 @import "sections/sectionPres";
 @import "sections/sectionForm";
+
+@media only screen and (max-width: 1023px) {
+  .sectionGallery .sectionGallery__galCol {
+    margin-left: -15px;
+  }
+
+  .sectionGallery .sectionGallery__img img {
+    display: block;
+  }
+
+  .sectionInfo .section__lgTtL {
+    order: -1;
+    margin-top: 0;
+    margin-bottom: 50px;
+  }
+
+  .sectionPres {
+    padding-bottom: 0px;
+    margin-bottom: -1px;
+  }
+
+  .sectionPres .sectionPres__galBox {
+    margin-left: -17px;
+    margin-right: -17px;
+  }
+}
